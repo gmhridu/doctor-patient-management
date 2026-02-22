@@ -6,14 +6,14 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   id?: string;
-  background?: "white" | "slate" | "teal" | "gradient";
+  background?: "white" | "slate" | "cyan" | "gradient";
 }
 
 const backgroundStyles = {
   white: "bg-white",
   slate: "bg-linear-to-b from-slate-50 to-white",
-  teal: "bg-linear-to-b from-[#f0fdfa]/50 to-white",
-  gradient: "bg-linear-to-br from-[#0f766e] via-[#115e59] to-[#1e3a5f]",
+  cyan: "bg-linear-to-b from-primary/20 to-white",
+  gradient: "bg-gradient-to-br from-primary via-primary/50 to-primary/30 text-primary-foreground",
 };
 
 export const Section = ({
