@@ -7,9 +7,6 @@ import { Testimonials } from "@/components/home/testimonials";
 import { Contact } from "@/components/home/contact";
 import { Footer } from "@/components/shared/footer";
 
-
-
-
 export default function HomePage() {
   return (
     <main>
