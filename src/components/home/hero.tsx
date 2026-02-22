@@ -48,7 +48,7 @@ export const Hero = () => {
             <div className="flex justify-center @4xl:justify-start">
               <Badge
                 variant="secondary"
-                className="px-3 py-1.5 text-sm font-medium gap-2 border border-primary/20 bg-primary/5"
+                className="p-3.5 text-sm font-medium gap-2 border border-primary/20 bg-primary/5"
               >
                 <span className="relative flex size-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
