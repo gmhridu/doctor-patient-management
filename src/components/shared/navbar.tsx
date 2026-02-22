@@ -3,9 +3,17 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
-  CalendarIcon,
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import {
+  CompassIcon,
+  CurrencyDollarIcon,
   FileTextIcon,
   PhoneIcon,
   StethoscopeIcon,
@@ -27,6 +35,11 @@ const navLinks: NavLink[] = [
     icon: FileTextIcon,
   },
   {
+    name: "How It Works",
+    href: "#how-it-works",
+    icon: CompassIcon,
+  },
+  {
     name: "Doctors",
     href: "#doctors",
     icon: UsersIcon,
@@ -34,7 +47,7 @@ const navLinks: NavLink[] = [
   {
     name: "Pricing",
     href: "#pricing",
-    icon: CalendarIcon,
+    icon: CurrencyDollarIcon,
   },
   {
     name: "Contact",
@@ -123,6 +136,12 @@ export function Navbar() {
           </SheetTrigger>
 
           <SheetContent side="right" className="w-full p-0">
+            <SheetHeader className="sr-only">
+              <SheetTitle className="sr-only">Medicare</SheetTitle>
+              <SheetDescription className="sr-only">
+                Your healthcare management solution
+              </SheetDescription>
+            </SheetHeader>
             <div className="flex flex-col h-full">
               {/* mobile header */}
               <div className="flex items-center justify-between border-b p-4">
