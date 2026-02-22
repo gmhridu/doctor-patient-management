@@ -5,8 +5,12 @@ import { Doctors } from "@/components/home/doctors";
 import { Pricing } from "@/components/home/pricing";
 import { Testimonials } from "@/components/home/testimonials";
 import { Contact } from "@/components/home/contact";
+import { Footer } from "@/components/shared/footer";
 
-export default function Page() {
+
+
+
+export default function HomePage() {
   return (
     <main>
       <Hero />
@@ -16,6 +20,7 @@ export default function Page() {
       <Pricing />
       <Testimonials />
       <Contact />
+      <Footer />
     </main>
   );
 }
