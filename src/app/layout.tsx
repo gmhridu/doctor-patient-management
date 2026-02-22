@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/home/navbar";
+import { Navbar } from "@/components/shared/navbar";
 
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-sans" });
 
